@@ -9,7 +9,7 @@ import TopNav from "./TopNav";
 
 function App() {
   return (
-    <div className="flex h-screen flex-col bg-slate-900">
+    <div className="flex h-screen flex-col bg-gray-900">
       <TopNav />
       <Routes>
         <Route exact path="/" element={<Home />}></Route>

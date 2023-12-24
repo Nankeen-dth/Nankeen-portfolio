@@ -10,3 +10,12 @@
   font-family: ibmBold;
   src: url("../public/IBM_Plex_Sans/IBMPlexSans-Bold.ttf");
 }
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* For Firefox */
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}

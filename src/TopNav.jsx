@@ -14,21 +14,26 @@ const TopNav = () => {
           target="_blank"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
-          <img
-            src="../public/nankeen/SVG/Asset 6.svg"
-            className="h-8"
-            alt="Nankeen Logo"
-          />
-          <span className="text-White self-center whitespace-nowrap text-2xl font-semibold">
+          <a href="https://web.facebook.com/Mildred.io" target="_blank">
+            <img
+              src="../public/nankeen/SVG/Asset 6.svg"
+              className="w-10"
+              alt="Nankeen Logo"
+            />
+          </a>
+
+          <span className="text-White -mt-1 hidden self-center whitespace-nowrap text-2xl font-semibold md:block">
             Nankeen
           </span>
         </a>
         <div className="flex space-x-3 md:order-2 md:space-x-0 rtl:space-x-reverse">
           <button
             type="button"
-            class="mb-2 me-2 mt-2 rounded-lg bg-yellow-400 px-4 py-2 text-sm font-medium text-white hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 dark:focus:ring-yellow-900"
+            class="bg-Harvest-Gold mb-2 me-2 mt-2 rounded-lg px-4 py-2 text-sm font-medium text-white hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 dark:focus:ring-yellow-900"
           >
-            <Link to="/Contact">Contact Me</Link>
+            <Link to="/Contact" className="text-black">
+              Contact Me
+            </Link>
           </button>
           <button
             data-collapse-toggle="navbar-sticky"
@@ -67,7 +72,9 @@ const TopNav = () => {
                 className=" text-Harvest-Gold block rounded px-3 py-2 md:p-0 "
                 aria-current="page"
               >
-                <Link to="/">Home</Link>
+                <Link to="/" className="active:text-Harvest-Gold">
+                  Home
+                </Link>
               </a>
             </li>
             <li>
@@ -75,7 +82,9 @@ const TopNav = () => {
                 href="#"
                 className=" hover:text-Harvest-Gold block rounded px-3 py-2 text-slate-400 md:p-0 dark:border-gray-700"
               >
-                <Link to="/About">About</Link>
+                <Link to="/About" className="active:text-Harvest-Gold">
+                  About
+                </Link>
               </a>
             </li>
             <li>
@@ -83,7 +92,9 @@ const TopNav = () => {
                 href="#"
                 className=" hover:text-Harvest-Gold block rounded px-3 py-2 text-slate-400 md:p-0 dark:border-gray-700"
               >
-                <Link to="/Skill">Skill</Link>
+                <Link to="/Skill" className="active:text-Harvest-Gold">
+                  Skill
+                </Link>
               </a>
             </li>
             <li>
@@ -91,7 +102,12 @@ const TopNav = () => {
                 href="#"
                 className=" hover:text-Harvest-Gold block rounded px-3 py-2 text-slate-400 md:p-0 dark:border-gray-700"
               >
-                <Link to="/Project">Project</Link>
+                <Link
+                  to="/Project"
+                  className="active:text-Harvest-Gold focus:text-Harvest-Gold focus:ring-violet-300"
+                >
+                  Project
+                </Link>
               </a>
             </li>
           </ul>
