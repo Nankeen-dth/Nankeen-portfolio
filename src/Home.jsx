@@ -25,7 +25,7 @@ const Home = () => {
         </header>
         <div>
           <img
-            src="../public/nankeen/SVG/hero.svg"
+            src="/nankeen/SVG/hero.svg"
             alt="logo"
             className=" xl:dvw right-12 w-96 sm:w-96 md:w-dvw lg:-mt-32 lg:w-dvw"
           />
