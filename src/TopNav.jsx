@@ -16,7 +16,7 @@ const TopNav = () => {
         >
           <a href="https://web.facebook.com/Mildred.io" target="_blank">
             <img
-              src="../public/nankeen/SVG/Asset 6.svg"
+              src="../public/nankeen/SVG/navlogo.svg"
               className="w-10"
               alt="Nankeen Logo"
             />
