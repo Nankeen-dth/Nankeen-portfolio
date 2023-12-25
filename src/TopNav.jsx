@@ -22,17 +22,17 @@ const TopNav = () => {
             />
           </a>
 
-          <span className="text-White -mt-1 hidden self-center whitespace-nowrap text-2xl font-semibold md:block">
+          <span className="-mt-1 hidden self-center whitespace-nowrap text-2xl font-semibold text-White md:block">
             Nankeen
           </span>
         </a>
         <div className="flex space-x-3 md:order-2 md:space-x-0 rtl:space-x-reverse">
           <button
             type="button"
-            class="bg-Harvest-Gold mb-2 me-2 mt-2 rounded-lg px-4 py-2 text-sm font-medium text-white hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 dark:focus:ring-yellow-900"
+            class="mb-2 me-2 mt-2 rounded-lg bg-Harvest-Gold px-4 py-2 text-sm font-medium text-white hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 dark:focus:ring-yellow-900"
           >
             <Link to="/Contact" className="text-black">
-              Contact Me
+              Hire Me
             </Link>
           </button>
           <button
@@ -44,7 +44,7 @@ const TopNav = () => {
           >
             <span className="sr-only">Open main menu</span>
             <svg
-              className=" text-Harvest-Gold h-5 w-5"
+              className=" h-5 w-5 text-Harvest-Gold"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -69,7 +69,7 @@ const TopNav = () => {
             <li>
               <a
                 href="#"
-                className=" text-Harvest-Gold block rounded px-3 py-2 md:p-0 "
+                className=" block rounded px-3 py-2 text-Harvest-Gold md:p-0 "
                 aria-current="page"
               >
                 <Link to="/" className="active:text-Harvest-Gold">
@@ -80,7 +80,7 @@ const TopNav = () => {
             <li>
               <a
                 href="#"
-                className=" hover:text-Harvest-Gold block rounded px-3 py-2 text-slate-400 md:p-0 dark:border-gray-700"
+                className=" block rounded px-3 py-2 text-slate-400 hover:text-Harvest-Gold md:p-0 dark:border-gray-700"
               >
                 <Link to="/About" className="active:text-Harvest-Gold">
                   About
@@ -90,7 +90,7 @@ const TopNav = () => {
             <li>
               <a
                 href="#"
-                className=" hover:text-Harvest-Gold block rounded px-3 py-2 text-slate-400 md:p-0 dark:border-gray-700"
+                className=" block rounded px-3 py-2 text-slate-400 hover:text-Harvest-Gold md:p-0 dark:border-gray-700"
               >
                 <Link to="/Skill" className="active:text-Harvest-Gold">
                   Skill
@@ -100,11 +100,11 @@ const TopNav = () => {
             <li>
               <a
                 href="#"
-                className=" hover:text-Harvest-Gold block rounded px-3 py-2 text-slate-400 md:p-0 dark:border-gray-700"
+                className=" block rounded px-3 py-2 text-slate-400 hover:text-Harvest-Gold md:p-0 dark:border-gray-700"
               >
                 <Link
                   to="/Project"
-                  className="active:text-Harvest-Gold focus:text-Harvest-Gold focus:ring-violet-300"
+                  className="focus:text-Harvest-Gold focus:ring-violet-300 active:text-Harvest-Gold"
                 >
                   Project
                 </Link>
@@ -116,7 +116,7 @@ const TopNav = () => {
           id="dropdown"
           className={`absolute right-0 top-full mt-2 ${
             isOpen ? "block" : "hidden"
-          } divide-Harvest-Gold  z-10 w-auto divide-y rounded-lg bg-black`}
+          } z-10  w-auto divide-y divide-Harvest-Gold rounded-lg bg-black`}
         >
           <ul className="py-2 text-sm " aria-labelledby="dropdownDefaultButton">
             <li>

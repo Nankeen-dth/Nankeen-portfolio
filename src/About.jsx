@@ -4,15 +4,15 @@ import { Card } from "flowbite-react";
 
 const About = () => {
   return (
-    <main className="mx-auto flex  h-screen max-w-screen-xl flex-col flex-wrap justify-between p-4 pt-36">
+    <main className="mx-auto flex  h-screen max-w-screen-xl flex-col flex-wrap items-center justify-between p-4 pt-36">
       <header>
-        <h1 className="title-font  text-White mb-4 text-center text-4xl font-extrabold leading-10 tracking-tight sm:text-5xl sm:leading-none md:text-6xl">
-          So who <span className="text-Harvest-Gold pl-2"> AM I?</span>
+        <h1 className="title-font  mb-4 text-center text-4xl font-extrabold leading-10 tracking-tight text-White sm:text-5xl sm:leading-none md:text-6xl">
+          So who <span className="pl-2 text-Harvest-Gold"> AM I?</span>
         </h1>
         <p className="text-1xl mx-auto flex  h-auto max-w-screen-xl flex-wrap  justify-center text-center text-slate-400 sm:text-2xl">
-          <span className="text-Harvest-Gold pr-1 font-bold">Coding</span> isn't
+          <span className="pr-1 font-bold text-Harvest-Gold">Coding</span> isn't
           just my skill it's my{" "}
-          <span className="text-Harvest-Gold ml-1">canvas for creativity.</span>
+          <span className="ml-1 text-Harvest-Gold">canvas for creativity.</span>
         </p>
       </header>
       <section className="h-4/5 w-full pt-20">
